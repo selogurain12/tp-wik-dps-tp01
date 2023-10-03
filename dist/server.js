@@ -18,3 +18,4 @@ app.use((req, res) => {
 app.listen(PORT, () => {
     console.log('Server Express with Typescript is runing on port 3000');
 });
+ 
