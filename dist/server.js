@@ -9,11 +9,11 @@ app.get('/ping', (req, res) => {
         res.json(req.headers);
     }
     else {
-        res.status(404).json({ error: 'Error 404 Not Found' });
+        res.status(404).end();
     }
 });
 app.use((req, res) => {
-    res.status(404).json({ error: 'Error 404 Not Found' });
+    res.status(404).end();
 });
 app.listen(PORT, () => {
     console.log('Server Express with Typescript is runing on port 3000');
